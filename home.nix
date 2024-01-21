@@ -42,6 +42,8 @@
     "Xcursor.size" = 24;
   };
 
+  programs.gh.enable = true;
+
   # Install & Configure Git
   programs.git = {
     enable = true;

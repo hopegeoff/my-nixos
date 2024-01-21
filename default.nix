@@ -50,7 +50,7 @@
   environment.systemPackages = with pkgs; [
     wget curl git cmatrix lolcat neofetch htop btop libvirt
     polkit_gnome lm_sensors unzip unrar libnotify 
-    v4l-utils ydotool wl-clipboard socat cowsay lsd 
+    v4l-utils ydotool wl-clipboard socat cowsay lsd gitAndTools.gh 
     pkg-config meson hugo gnumake ninja go nodejs symbola
     noto-fonts-color-emoji material-icons brightnessctl 
   ];
@@ -62,6 +62,7 @@
     dedicatedServer.openFirewall = true;
   };
 
+  programs.dconf.enable = true;
 #  programs.hyprland = {
 #    enable = true;
 #    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
